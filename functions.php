@@ -1,15 +1,15 @@
 <?php
 /**
- * Book Lite functions and definitions
+ * metric_av_main functions and definitions
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 if ( ! isset( $content_width ) )
 	$content_width = 750; /* pixels */
@@ -22,14 +22,14 @@ if ( ! function_exists( 'book_lite_setup' ) ) :
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_setup() {
 
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on Book Lite, use a find and replace
+	 * If you're building a theme based on metric_av_main, use a find and replace
 	 * to change 'book-lite' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'book-lite', get_template_directory() . '/languages' );
@@ -80,7 +80,7 @@ add_action( 'after_setup_theme', 'book_lite_setup' );
 /**
  * Register widgetized area and update sidebar with default widgets
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_widgets_init() {
 	register_sidebar( array(

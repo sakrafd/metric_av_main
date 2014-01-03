@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

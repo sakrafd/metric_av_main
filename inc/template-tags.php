@@ -4,15 +4,15 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 
 if ( ! function_exists( 'book_lite_content_nav' ) ) :
 /**
  * Display navigation to next/previous pages when applicable
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_content_nav( $nav_id ) {
 	global $wp_query, $post;
@@ -66,7 +66,7 @@ if ( ! function_exists( 'book_lite_comment' ) ) :
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -120,7 +120,7 @@ if ( ! function_exists( 'book_lite_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_posted_on() {
 
@@ -149,7 +149,7 @@ endif;
 /**
  * Returns true if a blog has more than 1 category
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
@@ -176,7 +176,7 @@ function book_lite_categorized_blog() {
 /**
  * Flush out the transients used in book_lite_categorized_blog
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_category_transient_flusher() {
 	// Like, beat it. Dig?

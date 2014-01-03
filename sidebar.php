@@ -2,8 +2,8 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 
 	/* The footer widget area is triggered if any of the areas

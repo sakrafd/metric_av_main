@@ -7,8 +7,8 @@
  * handled by a callback to book_lite_comment() which is
  * located in the functions.php file.
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 ?>
 

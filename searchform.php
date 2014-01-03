@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying search forms in Book Lite
+ * The template for displaying search forms in metric_av_main
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">

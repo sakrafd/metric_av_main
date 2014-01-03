@@ -1,7 +1,7 @@
 <?php
 /**
- * @package Book Lite
- * @since Book Lite 100
+ * @package metric_av_main
+ * @since metric_av_main 100
  */
 ?>
 

@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_page_menu_args( $args ) {
 	$args['show_home'] = true;
@@ -22,7 +22,7 @@ add_filter( 'wp_page_menu_args', 'book_lite_page_menu_args' );
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author
@@ -43,7 +43,7 @@ add_filter( 'body_class', 'book_lite_body_classes' );
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_enhanced_image_navigation( $url, $id ) {
 	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
@@ -60,7 +60,7 @@ add_filter( 'attachment_link', 'book_lite_enhanced_image_navigation', 10, 2 );
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  *
- * @since Book Lite 1.1
+ * @since metric_av_main 1.1
  */
 function book_lite_wp_title( $title, $sep ) {
 	global $page, $paged;

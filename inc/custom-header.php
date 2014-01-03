@@ -13,8 +13,8 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package Book Lite
- * @since Book Lite 1.0
+ * @package metric_av_main
+ * @since metric_av_main 1.0
  */
 
 /**
@@ -24,7 +24,7 @@
  * @uses book_lite_admin_header_style()
  * @uses book_lite_admin_header_image()
  *
- * @package Book Lite
+ * @package metric_av_main
  */
 function book_lite_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'book_lite_custom_header_args', array(
@@ -45,7 +45,7 @@ if ( ! function_exists( 'book_lite_header_style' ) ) :
  *
  * @see book_lite_custom_header_setup().
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_header_style() {
 
@@ -91,7 +91,7 @@ if ( ! function_exists( 'book_lite_admin_header_style' ) ) :
  *
  * @see book_lite_custom_header_setup().
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_admin_header_style() {
 
@@ -155,7 +155,7 @@ if ( ! function_exists( 'book_lite_admin_header_image' ) ) :
  *
  * @see book_lite_custom_header_setup().
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_admin_header_image() { ?>
 	<div id="headimg">
@@ -176,7 +176,7 @@ if ( ! function_exists( 'book_lite_custom_header_image' ) ) :
 /**
  * Header image styles for custom header and featured images
  *
- * @since Book Lite 1.0
+ * @since metric_av_main 1.0
  */
 function book_lite_custom_header_image() {
 
