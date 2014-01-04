@@ -37,6 +37,7 @@ html,
 body {
 	width: 100%;
 	height: 100%;
+	background-color: #e7ddd3;
 }
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -45,7 +46,7 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: #fff;
+	background: #e7ddd3;
 }
 article,
 aside,
@@ -101,12 +102,7 @@ IE9 uses WOFF which is base64 encoded to allow cross-site embedding.
 So unfortunately, IE9 will throw a console error, but it'll still work.
 */
 @font-face {
-	font-family: 'Genericons';
-	src: url('font/genericons-regular-webfont.eot');
-	src: url('font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('font/genericons-regular-webfont.woff') format('woff'),
-		 url('font/genericons-regular-webfont.ttf') format('truetype'),
-		 url('font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -120,7 +116,7 @@ input,
 select,
 textarea {
 	color: #262626;
-	font-family: 'georgia', sans-serif;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 20px;
 	font-size: 2.0rem;
 	font-weight: 400;
@@ -139,27 +135,27 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 29px;
 	text-transform: uppercase;
-	font-family: 'raleway', arial;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 h2 {
 	font-size: 1.0em;
 	line-height: 1.3em;
-	font-family: arvo, georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-transform: uppercase;
 	margin: 0 0 30px;
 	padding: 0;
 }
 h3 {
 	font-size: 1.75em;
-	font-family: arvo, georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 h4 {
 	font-size: 1.5em;
-	font-family: arvo, georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 h5 {
 	font-size: 1.25em;
-	font-family: arvo, georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 hr {
 	background-color: #ccc;
@@ -213,7 +209,7 @@ address {
 }
 pre {
 	background: #ededed;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
@@ -438,9 +434,10 @@ a:active {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	background-color: #e7ddd3;
 }
 #masthead-wrap {
-	background-color: #000;
+	background-color: #231f20;
 	width: 100%;
 	clear:left;
 }
@@ -461,7 +458,7 @@ a:active {
 	line-height: 1.7em;
 	margin: 0;
 	padding: 2px 0 0;
-	font-family:'arvo', georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-transform:uppercase;
 	letter-spacing:1px;
 }
@@ -476,6 +473,7 @@ a:active {
 #single-main{
 	max-width: 1000px;
 	margin: 0 auto;
+  background-color: #e7ddd3;
 }
 .widget-area .content-area {
 	float: left;
@@ -508,7 +506,7 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	margin:0;
 	padding: 60px 0;
 	width: 100%;
-	background: #000000;
+	background: ##e7ddd3;
 }
 
 .content-area {
@@ -533,11 +531,16 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	float: right;
 	width: auto;
 }
+
+.menu-logo{
+	float: left;
+	width: auto;
+}
+
 .main-navigation {
 	float: right;
-	font-family: 'arvo', georgia;
+	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	padding-top: 2px;
-	text-transform: uppercase;
 }
 .main-navigation ul {
 	list-style: none;
@@ -654,7 +657,7 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	margin: 0;
 	border: none;
 	line-height: 1.6;
-	font-family: 'arvo', georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: bold;
 	font-size: 28px;
 	letter-spacing: 1px;
@@ -951,7 +954,7 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	width: 42.3913043%;
 }
 .entry-title {
-	font-family: "raleway", sans-serif;
+	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-transform: uppercase;
 	line-height: 1.0344827586;
 	padding: 0;
@@ -993,7 +996,7 @@ body.page-template-page-full-width-php.widget-area .site-content{
 #main .format-status .single-thumbnail a:after,
 #main .format-audio .single-thumbnail a:after,
 #main .format-aside .single-thumbnail a:after{
-	font-family: "genericons", sans-serif;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin-left: -35px;
 	position: absolute;
 	left: 50%;
@@ -1139,8 +1142,7 @@ object {
 	padding: 0;
 	font-size: 15px;
 	font-weight: 600;
-	font-family: 'raleway', georgia, serif;
-	text-transform: uppercase;
+ font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .site-content .site-navigation a{
 	color: #fff;
@@ -1165,7 +1167,7 @@ object {
 }
 .sd-title {
 	color: #000 !important;
-	font-family: georgia !important;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 
@@ -1181,7 +1183,7 @@ object {
 #reply-title {
 	font-size: 1.0em;
 	line-height: 1.3em;
-	font-family: arvo, georgia;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
@@ -1233,7 +1235,7 @@ object {
 	font-size: .8em;
 }
 .comment-author {
-	font-family: raleway;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-style: normal;
 }
 .comment-meta a {
@@ -1323,7 +1325,7 @@ object {
 .widget-title a {
 	font-size: 15px;
 	font-weight: 600;
-	font-family: 'raleway', georgia, serif;
+  font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-transform: uppercase;
 	display: block;
 	line-height: 1.5;
@@ -1661,9 +1663,8 @@ img#wpstats {
 	}
 	.main-navigation {
 		float: left;
-		font-family: 'arvo', georgia;
+  	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 		padding-top: 2px;
-		text-transform: uppercase;
 	}
 	.main-navigation ul {
 		list-style: none;
@@ -1718,7 +1719,6 @@ img#wpstats {
 		margin: 3% 3% 0 3%;
 		padding-bottom: 10px;
 		font-family: 'arvo', georgia;
-		text-transform: uppercase;
 		font-size:13px;
 	}
 	.main-small-navigation ul,

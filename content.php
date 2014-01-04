@@ -21,9 +21,6 @@
 				<?php endif; ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
-			<header class="entry-header">
-				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-			</header><!-- .entry-header -->
 
 			<?php edit_post_link( __( 'Edit', 'metric_av_main' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 		</div><!-- .header-wrapper -->

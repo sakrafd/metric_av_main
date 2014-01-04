@@ -26,20 +26,12 @@
 		<?php do_action( 'before' ); ?>
 		<div id="masthead-wrap">
 			<header id="masthead" class="site-header" role="banner">
-				<div id="logo">
-					<?php if ( get_header_image() ) : ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
-					</a>
-					<?php else : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php endif; ?>
-				</div>
 				<div class="nav-wrap">
 					<nav role="navigation" class="site-navigation main-navigation">
 						<h1 class="assistive-text"><?php _e( 'Menu', 'metric_av_main' ); ?></h1>
 						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'metric_av_main' ); ?>"><?php _e( 'Skip to content', 'metric_av_main' ); ?></a></div>
 
+    					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="menu-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/metric_av_logo.png" alt="" /></a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav><!-- .site-navigation -->
 				</div><!-- .nav-wrap -->
