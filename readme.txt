@@ -1,87 +1,69 @@
-Theme: Book Lite
+Untitled
+---------------
+
+Untitled, like WordPress, is licensed under the GPL.
+Untitled, Copyright 2013 Automattic.com
+Untitled is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+Untitled uses the following fonts:
+Raleway: This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Arvo: This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Genericons: http://genericons.com/ is licensed under the GPL.
 
 
-About
-=====
+Requirements
+---------------
 
-Book Lite is inspired by classic books. It uses nice typography and show a single column content just like how old books look. It fits well on all kinds of devices and very easy to read the content.
-
-
-Installation
-============
-
-1. Download the zip file and unzip. Make sure that you have a "book-lite" folder and not nested folders such as "book-lite/book-lite" (ignore the quotes).
-2. Upload the unzipped folder to wp-content/themes folder.
-3. Go to Appearance -> Themes and Activate the Book Lite Theme.
+For self-hosted WordPress sites, the Jetpack plugin is required in order for the featured posts slider to work:
+http://wordpress.org/plugins/jetpack/
 
 
-Recommended Media settings
-==========================
+Notices
+---------------
 
-Go to Settings -> Media and set your media settings accordingly.
-
-Thumbnail = 248 x 248
-Medium = 450 x 0
-Large = 750 x 0
-
-Embed width = 750
+By design, the description is not displayed in the theme. If you would like to include one, uploading a custom logo is recommended. This is done using the Custom Header feature.
 
 
-Support
-=======
+Features
+---------------
 
-If you need any help with the theme, please visit: http://wpshoppe.com/forums
+* Full-bleed flex slider
+* Featured Image support
+* Full-width page template
+* Responsive layout
+* Custom Background
+* Custom Header (to upload a logo)
+* Jetpack.me compatibility for infinite scroll
+* Keyboard navigation for image attachment templates.
+* CSS3 transition effects
+* The GPL license in license.txt. :) Use it to make something cool.
 
-Enjoy!
 
+Slider Setup Instructions
+---------------
 
-License
-=======
+To take advantage of the full-bleed featured post slider (requires WordPress.com Featured Content or Jetpack [http://jetpack.me] Featured Content):
+1. Create a post with a featured image that's at least 960px wide.
+2. Navigate to Settings → Reading.
+3. Scroll down to the section labeled “Featured Content”.
+4. Enter the name of a tag.
+5. Click the blue “Save Changes” button at the bottom.
+6. Once a tag name has been saved, posts having this tag will appear in the featured content section. You can specify an image to be displayed with each post by setting a Featured Images.
 
-Book Lite WordPress Theme, Copyright 2012 wpshoppe.com
-Book Lite is distributed under GPL license. The icons are all designed by the theme author and is also distributed under GPL.
+== Changelog ==
 
+= 1.1 - Dec 06 2013 =
+* Fixed cite styling.
+* Ensured captioned images don't overflow the content container.
+* General code cleanup and optimization.
+* Added parent class to .carousel to avoid conflict with Gallery widget and Flexslider.
+* Removed no longer needed background nav image that returns a 404.
+* Updated author in footer and stylesheet.
+* Added featured image support to Pages as well as Posts.
+* Removed obsolete header text options.
 
-Changelog
-=========
+= 1.0.4 - Jul 08 2013 =
+* Something was updated here too.
 
-Version 108
------------
-	* changed all instances of Book to Book Lite
-	* added translation ready files
-
-Version 107
------------
-	* sidebar bug fix (not to be shown)
-	* Tagline on inner pages now shown
-
-Version 106
------------
-	* Added what more you can get in premium version of this theme
-
-Version 105
------------
-	* Adding slide effect on responsive menu
-	* Added Background support
-
-Version 104
------------
-	* Responsive Menu bug fix
-	* Fixed width in custom-header.php now references $content_width, easier to change width
-
-Version 103
------------
-	* Added Custom Header Support
-
-Version 102
------------
-	* Fixed gallery caption bug
-	* Fixed resized image bug
-
-Version 101
------------
-	* Fixed screenshot
-
-Version 100
------------
-	* Initial release
+= 1.0.3 - Jun 04 2013 =
+* Initial release.

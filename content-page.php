@@ -3,18 +3,21 @@
  * The template used for displaying page content in page.php
  *
  * @package metric_av_main
- * @since metric_av_main 100
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
+	<?php the_title( '<header class="entry-header"><h1 class="page-title">', '</h1></header><!-- .entry-header -->' ); ?>
 
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'booklite' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'booklite' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php
+			the_content();
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'metric_av_main' ),
+				'after'  => '</div>',
+			) );
+		?>
 	</div><!-- .entry-content -->
-</article><!-- #post-<?php the_ID(); ?> -->
+
+	<?php edit_post_link( __( 'Edit', 'metric_av_main' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+</article><!-- #post-## -->

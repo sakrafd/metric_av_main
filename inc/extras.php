@@ -5,7 +5,6 @@
  * Eventually, some of the functionality here could be replaced by core features
  *
  * @package metric_av_main
- * @since metric_av_main 1.0
  */
 
 /**
@@ -13,56 +12,37 @@
  *
  * @since metric_av_main 1.0
  */
-function book_lite_page_menu_args( $args ) {
+function metric_av_main_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'book_lite_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'metric_av_main_page_menu_args' );
 
 /**
  * Adds custom classes to the array of body classes.
  *
  * @since metric_av_main 1.0
  */
-function book_lite_body_classes( $classes ) {
+function metric_av_main_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
 
-	if ( get_header_image() || '' != get_the_post_thumbnail() ) {
-		$classes[] = 'custom-header';
-	} else {
-		$classes[] = 'no-custom-header';
+	if ( is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'widget-area';
 	}
 
 	return $classes;
 }
-add_filter( 'body_class', 'book_lite_body_classes' );
-
-/**
- * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
- *
- * @since metric_av_main 1.0
- */
-function book_lite_enhanced_image_navigation( $url, $id ) {
-	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
-		return $url;
-
-	$image = get_post( $id );
-	if ( ! empty( $image->post_parent ) && $image->post_parent != $id )
-		$url .= '#main';
-
-	return $url;
-}
-add_filter( 'attachment_link', 'book_lite_enhanced_image_navigation', 10, 2 );
+add_filter( 'body_class', 'metric_av_main_body_classes' );
 
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  *
  * @since metric_av_main 1.1
  */
-function book_lite_wp_title( $title, $sep ) {
+function metric_av_main_wp_title( $title, $sep ) {
 	global $page, $paged;
 
 	if ( is_feed() )
@@ -78,8 +58,13 @@ function book_lite_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		$title .= " $sep " . sprintf( __( 'Page %s', 'book-lite' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( __( 'Page %s', 'metric_av_main' ), max( $paged, $page ) );
 
 	return $title;
 }
-add_filter( 'wp_title', 'book_lite_wp_title', 10, 2 );
+add_filter( 'wp_title', 'metric_av_main_wp_title', 10, 2 );
+
+function metric_av_main_enhanced_image_navigation( $url, $id ) {
+	_deprecated_function( __FUNCTION__, '1.1' );
+	return $url;
+}

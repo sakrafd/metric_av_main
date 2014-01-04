@@ -3,39 +3,37 @@
  * The template for displaying Search Results pages.
  *
  * @package metric_av_main
- * @since metric_av_main 1.0
  */
 
 get_header(); ?>
 
+	<div id="main" class="site-main">
 		<section id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
 
-			<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'book-lite' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'metric_av_main' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<?php book_lite_content_nav( 'nav-above' ); ?>
+				<?php
+						while ( have_posts() ) :
+							the_post();
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+							get_template_part( 'content', 'search' );
+						endwhile;
+						metric_av_main_content_nav( 'nav-below' );
 
-					<?php get_template_part( 'content', 'search' ); ?>
+					else :
+						get_template_part( 'no-results', 'search' );
 
-				<?php endwhile; ?>
+					endif;
+				?>
 
-				<?php book_lite_content_nav( 'nav-below' ); ?>
+			</div><!-- #content -->
+		</section><!-- #primary -->
 
-			<?php else : ?>
-
-				<?php get_template_part( 'no-results', 'search' ); ?>
-
-			<?php endif; ?>
-
-			</div><!-- #content .site-content -->
-		</section><!-- #primary .content-area -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php
+get_sidebar();
+get_footer();
