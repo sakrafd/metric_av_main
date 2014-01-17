@@ -30,8 +30,12 @@
 					<nav role="navigation" class="site-navigation main-navigation">
 						<h1 class="assistive-text"><?php _e( 'Menu', 'metric_av_main' ); ?></h1>
 						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'metric_av_main' ); ?>"><?php _e( 'Skip to content', 'metric_av_main' ); ?></a></div>
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="menu-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/metric_logo.png" alt="" /></a>
+            <div class="menu-logo-container">
+              <div class="menu-logo">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="menu-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/metric_logo.png" alt="" /></a></div>
+           <div class="menu-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </div></div>
 					</nav><!-- .site-navigation -->
 				</div><!-- .nav-wrap -->
 			</header><!-- #masthead -->

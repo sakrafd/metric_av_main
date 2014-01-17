@@ -38,6 +38,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #e7ddd3;
+	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -504,9 +505,9 @@ body.page-template-page-full-width-php.widget-area .site-content{
 #colophon-wrap {
 	clear: both;
 	margin:0;
-	padding: 60px 0;
+	padding: 10px;
 	width: 100%;
-	background: ##e7ddd3;
+  background: rgb( 35, 31, 32 ); /* #231f02 */
 }
 
 .content-area {
@@ -532,11 +533,6 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	width: auto;
 }
 
-.menu-logo{
-	float: left;
-	width: auto;
-}
-
 .main-navigation {
 	float: right;
 	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -556,19 +552,17 @@ body.page-template-page-full-width-php.widget-area .site-content{
 .main-navigation a {
 	color: #999;
 	display: block;
-	font-size: .6em;
+	font-size: 12px;
 	padding: 9px 0px;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 .main-navigation-blue a {
 	color: #1f8eb1;
 	display: block;
-	font-size: .6em;
+	font-size: 12px;
 	padding: 9px 0px;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 .main-navigation ul ul {
@@ -627,6 +621,27 @@ body.page-template-page-full-width-php.widget-area .site-content{
 .main-small-navigation .menu {
 	display: none;
 }
+
+
+.menu-logo-container {
+    margin: 20px 0 20px 0;
+    overflow: auto;
+}
+
+.menu-logo {
+    float: left;
+}
+.menu-logo img {
+  display: block;
+	width: auto;
+}
+
+.menu-menu {
+    margin: 10px 0  0 135px
+}
+
+
+
 
 
 /* =Featured Content
@@ -1609,12 +1624,93 @@ img#wpstats {
 	margin: 0 auto;
 	max-width: 1000px;
 }
-#colophon a{
-	color: #fff;
-	}
+
 #colophon a:hover{
 	color: #818181;
 	}
+
+
+.footer-navigation {
+	float: right;
+	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+	padding-top: 2px;
+}
+.footer-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	float: right;
+}
+.footer-navigation li {
+	display: inline-block;
+	position: relative;
+	margin-left: 25px;
+}
+ .footer-navigation a {
+# 	color: #999;
+# 	display: block;
+ 	font-size: 12px;
+# 	padding: 9px 0px;
+# 	text-decoration: none;
+ }
+
+.footer-navigation-blue a {
+	color: #1f8eb1;
+	display: block;
+	font-size: .6em;
+	padding: 9px 0px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.footer-navigation ul ul {
+	background-color: #141414;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -10px;
+	z-index: 99999;
+	text-align: left;
+	padding: 0 10px 10px;
+}
+.footer-navigation ul ul ul {
+	left: 100%;
+	top: 0;
+}
+.footer-navigation ul ul a {
+	width: 175px;
+}
+.footer-navigation ul ul li {
+	margin: 0;
+}
+.footer-navigation ul ul li {
+}
+.footer-navigation li:hover > a {
+	color: #818181;
+}
+.footer-navigation ul ul a {
+	color:#fff;
+	padding:4px;
+}
+.footer-navigation ul ul :hover > a {
+	color:#999;
+}
+.footer-navigation ul ul a:hover {
+}
+.footer-navigation ul li:hover > ul {
+	display: block;
+}
+.footer-navigation li.current_page_item a,
+.footer-navigation li.current-menu-item a {
+	color:#fff;
+}
+.footer-navigation li.current_page_item a:hover,
+.footer-navigation li.current-menu-item a:hover {
+	color:#fff;
+}
 
 
 /* Media queries for responsive design
