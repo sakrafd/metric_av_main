@@ -126,7 +126,7 @@ textarea {
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
-	clear: both;
+#	clear: both;
 	font-weight: 400;
 	line-height: 1.2;
 }
@@ -568,12 +568,13 @@ body.page-template-page-full-width-php.widget-area .site-content{
 ----------------------------------------------- */
 
 .nav-wrap{
-	float: right;
+#	float: right;
+  clear: both;
 	width: auto;
 }
 
 .main-navigation {
-	float: right;
+	float: left;
 	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	padding-top: 2px;
 }
@@ -1840,9 +1841,10 @@ img#wpstats {
 		color: #fff;
 		font-size: 14px;
 		margin: 0;
-		padding: 15px 0;
+#		padding-top: 15px;
+    padding-right: 60px;
 		font-family:raleway, arial;
-		text-align:center;
+		text-align:right;
 	}
 	.site-navigation h1.menu-toggle:hover{
 		color: #999;
@@ -1862,6 +1864,7 @@ img#wpstats {
 		padding-bottom: 10px;
 		font-family: 'arvo', georgia;
 		font-size:13px;
+    float: right;
 	}
 	.main-small-navigation ul,
 	.main-small-navigation ul ul {
@@ -1870,6 +1873,8 @@ img#wpstats {
 	.main-small-navigation ul li a {
 		display: block;
 		line-height:2;
+    text-align: right;
+    padding-right: 30px;
 	}
 	.main-small-navigation ul li a:hover {
 		color: #fff;
